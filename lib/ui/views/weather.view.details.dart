@@ -20,59 +20,42 @@ class WeatherViewDetails extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(32.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(height: 300),
-                      Text(
-                        '${weather.neighborhood}',
-                        style: detailsHeaderStyle,
-                        textAlign: TextAlign.left,
-                      ),
-                      Text(
-                        '${weather.temp}',
-                        style: detailsSubStyle,
-                        textAlign: TextAlign.right,
-                      ),
-                      Divider(color: Colors.white),
-                      UIHelper.verticalSpaceMedium(),
-                      Divider(color: Colors.white),
-                      // SizedBox(height: 32),
-                      Text(
-                        'Software Type',
-                        style: fontSizeStyle,
-                      ),
-                      TextDescription(
-                        name: '${weather.softwareType}',
-                      ),
-                      UIHelper.verticalSpaceSmall(),
-                      Text(
-                        'Longitude',
-                        style: fontSizeStyle,
-                      ),
-                      TextDescription(
-                        name: '${weather.lon}',
-                      ),
-                      UIHelper.verticalSpaceSmall(),
-                      Text(
-                        'Latitude',
-                        style: fontSizeStyle,
-                      ),
-                      TextDescription(
-                        name: '${weather.lat}',
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+          Text(
+            '${weather.neighborhood}',
+            style: detailsHeaderStyle,
+            textAlign: TextAlign.left,
+          ),
+          Text(
+            '${weather.temp}',
+            style: detailsSubStyle,
+            textAlign: TextAlign.right,
+          ),
+          Divider(color: Colors.white),
+          UIHelper.verticalSpaceMedium(),
+          Divider(color: Colors.white),
+          // SizedBox(height: 32),
+          Text(
+            'Software Type',
+            style: fontSizeStyle,
+          ),
+          TextDescription(
+            name: '${weather.softwareType}',
+          ),
+          UIHelper.verticalSpaceSmall(),
+          Text(
+            'Longitude',
+            style: fontSizeStyle,
+          ),
+          TextDescription(
+            name: '${weather.lon}',
+          ),
+          UIHelper.verticalSpaceSmall(),
+          Text(
+            'Latitude',
+            style: fontSizeStyle,
+          ),
+          TextDescription(
+            name: '${weather.lat}',
           ),
         ],
       ),
